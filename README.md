@@ -46,90 +46,89 @@ The programs are designed to be run from a compiled JAR file without an IDE.
 ### J48 Decision tree
 1. Compile:
 
-    javac -cp "lib/weka.jar" src/DecisionTreeClassifier.java    
+    ```javac -cp "lib/weka.jar" src/DecisionTreeClassifier.java   ``` 
 
 2. Run:
 
-    java --add-opens java.base/java.lang=ALL-UNNAMED -jar DecisionTree.jar
+    ```java --add-opens java.base/java.lang=ALL-UNNAMED -jar DecisionTree.jar```
 
 3. Inputs (Example):
-
+   ```
     Enter seed: 1234
     Enter train file path: Euro_USD Stock\BTC_train.csv 
     Enter test file path: Euro_USD Stock\BTC_test.csv 
-
+   ```
 ### Genetic Programming Algorithm
-1. Ensure that you are in the directory with the `bin, src, Euro USD Stock` directories and the `Assignment3.jar` file. 
+1. Ensure that you are in the directory with the ```bin, src, Euro USD Stock``` directories and the ```Assignment3.jar``` file. 
 
-2. Run `java -jar Assignment3.jar` in the terminal.
+2. Run ```java -jar Assignment3.jar``` in the terminal.
 
 3. Enter the seed number. 
 
 ### Multi-Layer Perceptron
 1. COMPILE:
 
-    javac *.java
+    ```javac *.java```
 
 2. RUN:
     
-    java -jar MLP.jar
+    ```java -jar MLP.jar```
 
 3. Inputs (Example):
-
+```
     Enter seed: 1234
     Enter train file path: Euro_USD Stock\BTC_train.csv 
     Enter test file path: Euro_USD Stock\BTC_test.csv 
-
+```
 ---
+## 📁 Project Structure
 
+```plaintext
 .
-├── DecisionTree/ # J48 Decision Tree model
-│ ├── src/
-│ │ └── DecisionTreeClassifier.java # Model implementation
-│ ├── bin/
-│ ├── Euro_USD Stock/ # Data files
-│ │ ├── BTC_test.csv # Test dataset
-│ │ └── BTC_train.csv # Training dataset
-│ ├── lib/
-│ │ └── weka.jar # Weka library
-│ ├── META-INF/
-│ │ └── MANIFEST.MF
-│ ├── Decision.jar # Executable JAR file
-│ └── README.md
-
-├── GP_Algorithm/ # Genetic Programming model
-│ ├── bin/
-│ ├── Euro_USD Stock/
-│ │ ├── BTC_test.csv
-│ │ └── BTC_train.csv
-│ ├── src/
-│ │ ├── Data.java
-│ │ ├── InputParser.java
-│ │ ├── Main.java
-│ │ ├── Node.java
-│ │ ├── Parameters.java
-│ │ ├── Score.java
-│ │ ├── Test.java
-│ │ ├── Train.java
-│ │ └── Tree.java
-│ ├── Assignment3.jar # Executable JAR file
-│ └── README.md
-
-├── MLP/ # Multi-Layer Perceptron model
-│ ├── bin/
-│ ├── Euro_USD Stock/
-│ │ ├── BTC_test.csv
-│ │ └── BTC_train.csv
-│ ├── src/
-│ │ ├── DataLoader.java
-│ │ ├── Main.java
-│ │ ├── MLPNetwork.java
-│ │ └── Utils.java
-│ ├── MLP.jar # Executable JAR file
-│ └── README.md
-
-└── Assignment_3_Report_FINAL.pdf # Project report
-
+├── DecisionTree/
+│   ├── src/
+│   │   └── DecisionTreeClassifier.java
+│   ├── bin/
+│   ├── Euro_USD Stock/
+│   │   ├── BTC_test.csv
+│   │   └── BTC_train.csv
+│   ├── lib/
+│   │   └── weka.jar
+│   ├── META-INF/
+│   │   └── MANIFEST.MF
+│   ├── Decision.jar
+│   └── README.md
+├── GP_Algorithm/
+│   ├── bin/
+│   ├── Euro_USD Stock/
+│   │   ├── BTC_test.csv
+│   │   └── BTC_train.csv
+│   ├── src/
+│   │   ├── Data.java
+│   │   ├── InputParser.java
+│   │   ├── Main.java
+│   │   ├── Node.java
+│   │   ├── Parameters.java
+│   │   ├── Score.java
+│   │   ├── Test.java
+│   │   ├── Train.java
+│   │   └── Tree.java
+│   ├── Assignment3.jar
+│   └── README.md
+├── MLP/
+│   ├── bin/
+│   ├── Euro_USD Stock/
+│   │   ├── BTC_test.csv
+│   │   └── BTC_train.csv
+│   ├── src/
+│   │   ├── DataLoader.java
+│   │   ├── Main.java
+│   │   ├── MLPNetwork.java
+│   │   └── Utils.java
+│   ├── MLP.jar
+│   └── README.md
+└── Assignment_3_Report_FINAL.pdf
+```
 ---
 
 ## 👥 Contributors
